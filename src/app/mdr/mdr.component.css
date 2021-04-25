@@ -1,0 +1,22 @@
+.mdr-footer{
+    min-height: 48px;
+    background: #eee;
+    padding: 15px;
+}
+.vote{
+    min-width: 46px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* .vote-up{
+    background-image: url("vote-up.png");
+    background-size: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.vote-down{
+    background-image: url("vote-down.png");
+    background-size: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+} */

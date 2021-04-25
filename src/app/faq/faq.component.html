@@ -1,0 +1,21 @@
+
+<main id="page-content-wrapper" role="main" style="margin: 15px">
+    <div class="col-md-12 col-sm-12">
+        <div class="col-md-12 col-sm-12" >
+            <h4><span><i class="fas fa-info-circle"></i></span><span>Frequently Asked Questions </span></h4>
+            <p>Find out everything you need to get started by taking a tour. If you still have questions, come back and check out the pinned articles.</p>
+
+            <div class="container col-md-12 col-sm-12">
+                <div *ngFor="let faq of allFaqs">
+                  <button class="accordion" (click)="toggleMe($event)" > <span innerHTML="{{faq.question}}"></span> </button>
+                  <div class="panel">
+                    <div style="padding: 14px;
+                    background: #fff;" innerHTML="{{faq.answer}}">
+
+                    </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+    </div>
+</main>

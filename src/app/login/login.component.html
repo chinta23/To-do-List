@@ -1,0 +1,30 @@
+<div class="login-body">
+  <div class="container login-container">
+      <div class="col-sm-2 col-md-4"></div>
+      <div class="col-sm-8 col-md-4">
+          <div class="modalContent"  >
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <div style="text-align: center">
+                      <img src="assets/images/paladion.png" alt="Paladion" class="logo g-mb-20">
+                  </div>
+                  <div id="error1" class="text-center"></div>
+                  <div class="">
+                      <label > Username </label>
+                      <input type="text" placeholder="Username" formControlName="username">
+                      <label>Password</label>
+                      <input type="password" formControlName="password"placeholder="Password">
+                     <!-- <button class="login-btn red" type="submit">Sign in to Propal</button>-->
+
+                     <button class="login-btn red" type="submit">Sign in </button>
+
+                     <!--<div *ngIf="loading" class="alert alert-danger">Invalid Username or Password</div>-->
+                     <!---<div *ngIf="pageloggedin" class="alert alert-danger">Invalid Username or Password</div>-->
+                     <div [hidden]="!loading"  *ngIf="loading" class="alert alert-danger">Invalid Username or Password</div>
+                     
+                  </div>
+                  <!-- <span class="psw"><a id="forgotPassHref" [routerLink]="'/passwordreset'" class="g-color-lightblue">Forgot password?</a></span> -->
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

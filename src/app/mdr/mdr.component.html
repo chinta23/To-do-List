@@ -1,0 +1,43 @@
+<div class="row" *ngFor="let mdr of allMdrs">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10" style="display: flex;    margin-bottom: 25px;
+    border-bottom: 1px solid green;">
+ 
+        <div class="" style="float:left;padding: 5px 15px 0px 0px;">
+            <div class="text-center">
+              <img src="assets/images/face.jpg" width="42" height="42" class="img-circle">
+            </div>
+            <div class="vote"> 
+                <img src="assets/images/vote-up.png" alt="Smiley face" width="24" height="18">
+                <p itemprop="upvoteCount" class="vote-count-post" style="margin: 0px;">9</p>
+                <img src="assets/images/vote-down.png" alt="Smiley face" width="24" height="18">
+            </div> 
+        </div>
+        <div class="" style="width: -webkit-fill-available;margin-bottom: 25px;">
+            
+           <!--<p style="margin-bottom: 5px;"> Updated: March 22, 2018 </p>-->
+            <h2 style="margin-top:0px;"> {{mdr.title}} </h2>
+            <p>  {{mdr.short_desc}} </p>
+            <div class="mdr-footer">              
+                <span style="background: white;padding: 7px;"> 
+                        <i class="fa fa-eye" aria-hidden="true"></i> 412 views 
+                </span>              
+                <span [routerLink]="['/mdr', mdr.id]"
+                  class="float-right" style="float:right  ;  background: black;
+                        float: right;
+                        color: white;
+                        padding: 3px;
+                        font-size: 14px;cursor: pointer;">
+                 More... 
+                </span>             
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    <div class="col-md-1">
+    </div>
+</div>
